@@ -1,11 +1,11 @@
 const spanText = document.querySelector('.color');
 const buttonClick = document.querySelector('.change-color');
-const widgetBody = document.querySelector('.widget');
+// const widgetBody = document.querySelector('.widget');
 
 buttonClick.addEventListener('click', onInputChange);
 function onInputChange () {
-  widgetBody.style.backgroundColor = getRandomHexColor();
-  spanText.textContent = widgetBody.style.backgroundColor;
+  document.body.style.backgroundColor = getRandomHexColor();
+  spanText.textContent =  document.body.style.backgroundColor;
 };
 
 function getRandomHexColor() {
